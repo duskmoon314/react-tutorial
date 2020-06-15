@@ -20,12 +20,24 @@ Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行时，我们写好�
 
 安装完 Node.js 后，也一并安装完了 npm（Node Package Manager），可以使用`npm install`安装需要的 JavaScript 包。
 
+由于各种原因，推荐使用淘宝镜像对 npm 进行加速
+
+```bash
+npm config set registry https://registry.npm.taobao.org
+```
+
 ## Yarn
 
 Yarn 是比 npm（相对）更好的依赖管理工具，[官网](https://yarn.bootcss.com/docs/getting-started/)。可以使用 npm 进行安装
 
 ```bash
 npm install -g yarn
+```
+
+由于各种原因，推荐使用淘宝镜像对 yarn 进行加速
+
+```bash
+yarn config set registry https://registry.npm.taobao.org
 ```
 
 ### 常用命令

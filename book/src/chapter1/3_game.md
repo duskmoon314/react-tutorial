@@ -1,5 +1,17 @@
 # 实现游戏功能
 
+一个与本节基本一致的 CodeSandbox 中的 demo
+
+<iframe
+     src="https://codesandbox.io/embed/relaxed-fire-0ylln?fontsize=14&hidenavigation=1&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="EESAST React+antd Tutorial 1.2"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-autoplay allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
+
+---
+
 接下来添加随机数生成功能，使用`Math.random()`可以生成一个 0 到 1 之间的数，再结合乘法和`Math.floor()`向下取整便可以得到一个随机数生成器。但是如果简单的放在组件内部，React 每次渲染的时候都会重新生成，游戏便无法正常工作。因此也采用`state`来保存这个目标数字——使用 React 的`state Hook`，用 1 到 100 的随机数进行初始化。
 
 ```javascript
@@ -79,7 +91,7 @@ import "./App.css";
 
 const App: React.FC = () => {
   const [secret, setSecret] = useState(Math.floor(Math.random() * 100 + 1));
-  const [guess, setGuess] = useState < number > 0;
+  const [guess, setGuess] = useState<number>(0);
   const [randomAble, setRandomAble] = useState(false);
 
   const onInputChange = (value: number | string | undefined) => {

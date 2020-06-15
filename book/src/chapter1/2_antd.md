@@ -1,5 +1,17 @@
 # 添加 ant.design 并实现基本框架
 
+一个与本节基本一致的 CodeSandbox 中的 demo
+
+<iframe
+     src="https://codesandbox.io/embed/eesast-reactantd-tutorial-11-ldysx?fontsize=14&hidenavigation=1&module=%2Fsrc%2FApp.tsx&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="EESAST React+antd Tutorial 1.1"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-autoplay allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
+
+---
+
 我们使用蚂蚁金服开源的 Ant Design of React 组件库，在终端中键入
 
 ```bash
@@ -26,7 +38,7 @@ import { InputNumber, message } from "antd";
 import "./App.css";
 
 const App: React.FC = () => {
-  const [guess, setGuess] = useState < number > 0;
+  const [guess, setGuess] = useState<number>(0);
 
   const onInputChange = (value: number | string | undefined) => {
     message.info(`You guess ${value}`);
