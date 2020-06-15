@@ -5,3 +5,7 @@ multilingual = false
 src = "src"
 title = "EESAST React Tutorial"
 description = "EESAST暑期培训React教程"
+
+[output.html]
+git-repository-url = "https://github.com/duskmoon314/react-tutorial"
+git-repository-icon = "fa-github"
