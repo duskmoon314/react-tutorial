@@ -1,0 +1,7 @@
+[book]
+authors = ["Campbell"]
+language = "zh-cn"
+multilingual = false
+src = "src"
+title = "EESAST React Tutorial"
+description = "EESAST暑期培训React教程"
