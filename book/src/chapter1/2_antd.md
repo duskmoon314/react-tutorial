@@ -16,9 +16,9 @@ yarn add antd
   },
 ```
 
-这表示，本项目依赖 4.3.3 版本的 antd，在任何一个具有此`package.json`的文件夹中都可以根据它使用 npm 或 yarn 设置好环境。
+这表示，本项目依赖 4.3.3 版本的 antd，在任何一个具有此`package.json`的文件夹中都可以根据它使用 npm 或 yarn 设置好相应环境。
 
-然后我们修改`src/App.css`，在最前面添加一行`@import "~antd/dist/antd.css";`用于启用 antd 提供的样式。
+然后我们修改`src/App.css`，在最前面添加一行`@import "~antd/dist/antd.css";`用于启用 antd 提供的样式。再打开`src/App.tsx`，清除所有内容，并仿照下面代码搭建游戏的框架。
 
 ```javascript
 import React, { useState } from "react";
@@ -50,7 +50,7 @@ export default App;
 
 `React.FC`是“函数式组件”的缩写，使用它来告诉编译器`App`是一个函数组件。
 
-`const [guess, setGuess] = useState<number>(0);`使用 React 的`state Hook`，表示`App`中有个状态叫做`guess`，初始化为 0。
+`const [guess, setGuess] = useState<number>(0);`使用 React 的`state Hook`，表示组件`<App />`中有个状态叫做`guess`，初始化为 0。
 
 ```html
 <div>
