@@ -162,8 +162,8 @@
     ...
   },
 </code></pre>
-<p>这表示，本项目依赖 4.3.3 版本的 antd，在任何一个具有此<code>package.json</code>的文件夹中都可以根据它使用 npm 或 yarn 设置好环境。</p>
-<p>然后我们修改<code>src/App.css</code>，在最前面添加一行<code>@import &quot;~antd/dist/antd.css&quot;;</code>用于启用 antd 提供的样式。</p>
+<p>这表示，本项目依赖 4.3.3 版本的 antd，在任何一个具有此<code>package.json</code>的文件夹中都可以根据它使用 npm 或 yarn 设置好相应环境。</p>
+<p>然后我们修改<code>src/App.css</code>，在最前面添加一行<code>@import &quot;~antd/dist/antd.css&quot;;</code>用于启用 antd 提供的样式。再打开<code>src/App.tsx</code>，清除所有内容，并仿照下面代码搭建游戏的框架。</p>
 <pre><code class="language-javascript">import React, { useState } from &quot;react&quot;;
 import { InputNumber, message } from &quot;antd&quot;;
 import &quot;./App.css&quot;;
@@ -190,7 +190,7 @@ export default App;
 </code></pre>
 <p>这段代码添加了一个输入框，并在输入框中数字改变时弹出一个提示信息。</p>
 <p><code>React.FC</code>是“函数式组件”的缩写，使用它来告诉编译器<code>App</code>是一个函数组件。</p>
-<p><code>const [guess, setGuess] = useState&lt;number&gt;(0);</code>使用 React 的<code>state Hook</code>，表示<code>App</code>中有个状态叫做<code>guess</code>，初始化为 0。</p>
+<p><code>const [guess, setGuess] = useState&lt;number&gt;(0);</code>使用 React 的<code>state Hook</code>，表示组件<code>&lt;App /&gt;</code>中有个状态叫做<code>guess</code>，初始化为 0。</p>
 <pre><code class="language-html">&lt;div&gt;
   &lt;h1&gt;Guessing Game&lt;/h1&gt;
   &lt;p&gt;Please Input Your Number:&lt;/p&gt;
