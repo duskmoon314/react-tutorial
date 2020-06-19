@@ -40,3 +40,9 @@ yarn.lock
 ```
 
 我们接下来需要做的是修改 App.tsx，在其中实现一个猜数字的小游戏。
+
+```bash
+yarn start
+```
+
+启动 React 应用，在浏览器中打开`localhost:3000`查看应用
