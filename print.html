@@ -432,6 +432,7 @@ const History: React.FC&lt;HistoryProps&gt; = ({ history }) =&gt; {
 <pre><code class="language-javascript">const historyList = history.map((element) =&gt; {
   return (
     &lt;Timeline.Item
+      key={element.value}
       color={
         element.status === &quot;You Win&quot;
           ? &quot;green&quot;
