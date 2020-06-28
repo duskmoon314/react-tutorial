@@ -175,6 +175,13 @@
 <p>最终效果</p>
 <p><img src="chapter1/../assets/demo.png" alt="demo" /></p>
 <h1><a class="header" href="#init-with-create-react-app" id="init-with-create-react-app">Init with create-react-app</a></h1>
+<h2><a class="header" href="#摘要" id="摘要">摘要</a></h2>
+<ul>
+<li>项目初始化</li>
+<li>React 项目的结构</li>
+<li><code>package.json</code>的内容</li>
+</ul>
+<hr />
 <p>我们使用 create-react-app 来创建一个简单的“单页应用”，用于学习。</p>
 <p>习惯于 npm 和 npx，在终端中键入</p>
 <pre><code class="language-bash">npx create-react-app react-tutorial --typescript
@@ -206,6 +213,14 @@ yarn.lock
 </code></pre>
 <p>启动 React 应用，在浏览器中打开<code>localhost:3000</code>查看应用</p>
 <h1><a class="header" href="#添加-antdesign-并实现基本框架" id="添加-antdesign-并实现基本框架">添加 ant.design 并实现基本框架</a></h1>
+<h2><a class="header" href="#摘要-1" id="摘要-1">摘要</a></h2>
+<ul>
+<li>使用 yarn 安装依赖 ant.design</li>
+<li>初识 React 组件</li>
+<li>初识 JSX/TSX</li>
+<li>ant.design</li>
+</ul>
+<hr />
 <p>一个与本节基本一致的 CodeSandbox 中的 demo</p>
 <iframe
      src="https://codesandbox.io/embed/eesast-reactantd-tutorial-11-ldysx?fontsize=14&hidenavigation=1&module=%2Fsrc%2FApp.tsx&theme=dark"
@@ -232,7 +247,7 @@ import { InputNumber, message } from &quot;antd&quot;;
 import &quot;./App.css&quot;;
 
 const App: React.FC = () =&gt; {
-  const [guess, setGuess] = useState&lt;number&gt;(0);
+  const [guess, setGuess] = useState &lt; number &gt; 0;
 
   const onInputChange = (value: number | string | undefined) =&gt; {
     message.info(`You guess ${value}`);
@@ -269,6 +284,12 @@ export default App;
 </code></pre>
 <p>声明函数<code>onInputChange</code>，参数类型为 number <em>或</em> string <em>或</em> undefined，为了与 antd 提供的组件<code>&lt;InputNumber /&gt;</code>的<code>onChange</code>一致。其功能为弹出一个信息，显示当前输入的数，并在非空时将数存入状态<code>guess</code>中。</p>
 <h1><a class="header" href="#实现游戏功能" id="实现游戏功能">实现游戏功能</a></h1>
+<h2><a class="header" href="#摘要-2" id="摘要-2">摘要</a></h2>
+<ul>
+<li>进一步理解组件的<strong>state</strong></li>
+<li>如何查阅 ant.design 的文档</li>
+</ul>
+<hr />
 <p>一个与本节基本一致的 CodeSandbox 中的 demo</p>
 <iframe
      src="https://codesandbox.io/embed/relaxed-fire-0ylln?fontsize=14&hidenavigation=1&theme=dark"
@@ -387,6 +408,13 @@ const App: React.FC = () =&gt; {
 export default App;
 </code></pre>
 <h1><a class="header" href="#显示猜测的历史" id="显示猜测的历史">显示猜测的历史</a></h1>
+<h2><a class="header" href="#摘要-3" id="摘要-3">摘要</a></h2>
+<ul>
+<li>React 哲学</li>
+<li>组件的“参数”</li>
+<li>JS/TS 中的对象</li>
+</ul>
+<hr />
 <p>一个与本节基本一致的 CodeSandbox 中的 demo</p>
 <iframe
      src="https://codesandbox.io/embed/eesast-reactantd-tutorial-13-6i6gf?fontsize=14&hidenavigation=1&theme=dark"

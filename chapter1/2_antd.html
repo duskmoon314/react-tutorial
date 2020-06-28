@@ -152,6 +152,14 @@
                 <div id="content" class="content">
                     <main>
                         <h1><a class="header" href="#添加-antdesign-并实现基本框架" id="添加-antdesign-并实现基本框架">添加 ant.design 并实现基本框架</a></h1>
+<h2><a class="header" href="#摘要" id="摘要">摘要</a></h2>
+<ul>
+<li>使用 yarn 安装依赖 ant.design</li>
+<li>初识 React 组件</li>
+<li>初识 JSX/TSX</li>
+<li>ant.design</li>
+</ul>
+<hr />
 <p>一个与本节基本一致的 CodeSandbox 中的 demo</p>
 <iframe
      src="https://codesandbox.io/embed/eesast-reactantd-tutorial-11-ldysx?fontsize=14&hidenavigation=1&module=%2Fsrc%2FApp.tsx&theme=dark"
@@ -178,7 +186,7 @@ import { InputNumber, message } from &quot;antd&quot;;
 import &quot;./App.css&quot;;
 
 const App: React.FC = () =&gt; {
-  const [guess, setGuess] = useState&lt;number&gt;(0);
+  const [guess, setGuess] = useState &lt; number &gt; 0;
 
   const onInputChange = (value: number | string | undefined) =&gt; {
     message.info(`You guess ${value}`);
