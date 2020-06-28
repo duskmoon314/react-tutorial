@@ -1,5 +1,14 @@
 # 添加 ant.design 并实现基本框架
 
+## 摘要
+
+- 使用 yarn 安装依赖 ant.design
+- 初识 React 组件
+- 初识 JSX/TSX
+- ant.design
+
+---
+
 一个与本节基本一致的 CodeSandbox 中的 demo
 
 <iframe
@@ -38,7 +47,7 @@ import { InputNumber, message } from "antd";
 import "./App.css";
 
 const App: React.FC = () => {
-  const [guess, setGuess] = useState<number>(0);
+  const [guess, setGuess] = useState < number > 0;
 
   const onInputChange = (value: number | string | undefined) => {
     message.info(`You guess ${value}`);

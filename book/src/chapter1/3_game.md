@@ -1,5 +1,12 @@
 # 实现游戏功能
 
+## 摘要
+
+- 进一步理解组件的**state**
+- 如何查阅 ant.design 的文档
+
+---
+
 一个与本节基本一致的 CodeSandbox 中的 demo
 
 <iframe

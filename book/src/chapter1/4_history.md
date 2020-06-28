@@ -1,5 +1,13 @@
 # 显示猜测的历史
 
+## 摘要
+
+- React 哲学
+- 组件的“参数”
+- JS/TS 中的对象
+
+---
+
 一个与本节基本一致的 CodeSandbox 中的 demo
 
 <iframe

@@ -1,5 +1,13 @@
 # Init with create-react-app
 
+## 摘要
+
+- 项目初始化
+- React 项目的结构
+- `package.json`的内容
+
+---
+
 我们使用 create-react-app 来创建一个简单的“单页应用”，用于学习。
 
 习惯于 npm 和 npx，在终端中键入
